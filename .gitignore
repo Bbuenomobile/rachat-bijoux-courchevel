@@ -15,4 +15,7 @@ next-env.d.ts
 build_*.py
 deploy_*.py
 verify_*.py
+submit_*.py
+test_*.py
+*.tsbuildinfo
 temp_*
