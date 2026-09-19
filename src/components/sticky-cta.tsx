@@ -23,3 +23,5 @@ export function StickyCTA() {
     </div>
   );
 }
+
+export const StickyCta = StickyCTA;

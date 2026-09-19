@@ -12,6 +12,8 @@ type Props = {
   source?: string;
   headline?: string;
   intro?: string;
+  title?: string;
+  subtitle?: string;
 };
 
 const initial: ContactState = { ok: false, message: '' };
@@ -24,7 +26,11 @@ export function ContactForm({
   source = 'site',
   headline,
   intro,
+  title,
+  subtitle,
 }: Props) {
+  const displayHeadline = headline || title;
+  const displayIntro = intro || subtitle;
   const [state, action, pending] = useActionState(submitContact, initial);
 
   const [fichiersInfo, setFichiersInfo] = useState('');
@@ -99,8 +105,8 @@ const MAX_TOTAL = 22 * 1024 * 1024;
 
   return (
     <form action={action} className="space-y-4" noValidate>
-      {headline && <h3 className="h3">{headline}</h3>}
-      {intro && <p className="text-ink-600">{intro}</p>}
+      {displayHeadline && <h3 className="h3">{displayHeadline}</h3>}
+      {displayIntro && <p className="text-ink-600">{displayIntro}</p>}
 
       <input type="hidden" name="category" value={category} />
       <input type="hidden" name="source" value={source} />

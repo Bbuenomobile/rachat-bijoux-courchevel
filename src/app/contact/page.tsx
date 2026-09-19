@@ -58,8 +58,8 @@ export default function ContactPage() {
             <div className="bg-white p-8 rounded-2xl border border-ink-900/10 shadow-sm">
               <ContactForm
                 variant="full"
-                title="Demande d'Expertise & Rendez-vous Privé"
-                subtitle="Remplissez ce formulaire confidentiel pour une estimation préliminaire ou pour fixer une rencontre en salon privé ou à votre chalet."
+                headline="Demande d'Expertise & Rendez-vous Privé"
+                intro="Remplissez ce formulaire confidentiel pour une estimation préliminaire ou pour fixer une rencontre en salon privé ou à votre chalet."
               />
             </div>
           </div>

@@ -24,8 +24,8 @@ export default function EstimationGratuitePage() {
         <div className="bg-white p-8 md:p-12 rounded-2xl border border-ink-900/10 shadow-sm">
           <ContactForm
             variant="full"
-            title="Formulaire d'Estimation en Ligne"
-            subtitle="Indiquez les caractéristiques de vos pièces (nature du métal, poinçon, poids approximatif, type de gemme, certificat GIA ou marque) pour une première évaluation sous 24h."
+            headline="Formulaire d'Estimation en Ligne"
+            intro="Indiquez les caractéristiques de vos pièces (nature du métal, poinçon, poids approximatif, type de gemme, certificat GIA ou marque) pour une première évaluation sous 24h."
           />
         </div>
       </div>
